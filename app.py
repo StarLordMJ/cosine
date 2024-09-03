@@ -78,6 +78,10 @@ def model_load(place_selec: str):
             break
     return top_places
 
+@app.route('/')
+def hello_world():
+    return 'Hello, World!'
+
 @app.route('/handle_get', methods=['GET'])
 def handle_get():
     if request.method == 'GET':
